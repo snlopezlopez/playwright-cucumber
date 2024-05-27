@@ -11,16 +11,16 @@ report.generate({
       name: 'chrome',
       version: '120',
     },
-    device: 'Adam - PC',
+    device: 'PC',
     platform: {
       name: 'Windows',
-      version: '11',
+      version: 'xx',
     },
   },
   customData: {
     title: 'Test Info',
     data: [
-      { label: 'Project', value: 'BookCart App' },
+      { label: 'Project', value: 'Playwright App' },
       { label: 'Release', value: '1.2.3' },
       { label: 'Cycle', value: 'Smoke-1' },
     ],
