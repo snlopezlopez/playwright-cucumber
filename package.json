@@ -13,7 +13,6 @@
     "test:failed": "cucumber-js -p rerun @rerun.txt",
     "prettier": "npx prettier --write .",
     "lint:check": "eslint . --max-warnings=0",
-    "lint:fix": "eslint . --fix"
   },
   "keywords": [],
   "author": "",
