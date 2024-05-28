@@ -1,28 +1,41 @@
 [![Playwright.dev](https://img.shields.io/badge/Documentation-Playwright-45ba4b.svg?logo=playwright)](https://playwright.dev/docs/intro)
 [![Cucumber](https://img.shields.io/badge/Documantation-Cucumber-23d96c.svg?logo=cucumber)](https://cucumber.io/)
 [![GitHub](https://img.shields.io/badge/Documantation-GitHub-23d96c.svg?logo=github)](https://github.com/adamcegielka/playwright-cucumber-bdd-typescript)
-<br>
+
+
+
 
 # Playwright with Typescript - Cucumber - BDD
+## template-e2e-playwright-test
+**Playwright** is used in Digital Cepsa for E2E testing.
+## Project structure
+![structure cucumber.jpg](..%2F..%2FUsers%2Fsantiagolopez%2FDownloads%2Fstructure%20cucumber.jpg)
 
-This is my personal project to improve my skills in automated testing using Cucumber and BDD.
-This project was created solely for my learning process and to showcase my testing skills.
+helper/inits.ts--> create folder test-result
+
+helper/reports.ts--> report configuration. Configure metadata
+
+hooks/hooks.ts--> Configure Before and After test. headless (activate ui mode)
+
+hooks/pageFixture.ts--> Configure Fixture mode in playwright)
+
+test/features/*.features--> Features)
+
+test/steps/*.ts--> Playwright tests)
 
 ## Installation
+https://playwright.dev/docs/intro#installing-playwright <br>
 
-- <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> => Install Playwright => OK
+- Install Playwright
 - Install Cucumber plugin
 - Install dependencies: 
   - `npm i @cucumber/cucumber -D`
   - `npm i ts-node -D`
 - Create folder `src/test/features` and `src/test/steps`
-- Install ESLint `npm install eslint --save-dev`
 - Configuration `npm init @eslint/config`
-- Add prettier in `.eslintrc.json` :
+- Add prettier :
 ```json
 "extends": [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
     "prettier"
 ],
 ```
