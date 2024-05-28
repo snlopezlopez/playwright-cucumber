@@ -1,7 +1,7 @@
 {
-  "name": "playwright-cucumber-bdd-typescript",
+  "name": "playwright-cucumber",
   "version": "1.0.0",
-  "description": "This is my personal project to improve my skills in automated testing using Cucumber and BDD.",
+  "description": "Playwright BDD template.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -11,8 +11,7 @@
     "test": "cucumber-js test || true",
     "posttest": "npx ts-node src/helper/report.ts",
     "test:failed": "cucumber-js -p rerun @rerun.txt",
-    "prettier": "npx prettier --write .",
-    "lint:check": "eslint . --max-warnings=0"
+    "prettier": "npx prettier --write ."
   },
   "keywords": [],
   "author": "",
